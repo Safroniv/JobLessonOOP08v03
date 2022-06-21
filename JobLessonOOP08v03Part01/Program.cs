@@ -1,5 +1,7 @@
-﻿using Incapsulation.Data;
+﻿//Урок 4 - объекты, наследование, включает Incapsulation.Data
+using Incapsulation.Data;
 using Incapsulation.Data.Specifications;
+
 
 var storage = new InMemoryCustomerDataStorage();
 var newCastomer = storage.CreateCustomer(1, "Ivan", 37);
