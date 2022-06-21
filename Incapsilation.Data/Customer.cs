@@ -1,4 +1,4 @@
-﻿namespace Incapsilation.Data
+﻿namespace Incapsulation.Data
 {
     public class Customer
     {

@@ -1,6 +1,6 @@
-﻿using Incapsilation.Data.Specifications;
+﻿using Incapsulation.Data.Specifications;
 
-namespace Incapsilation.Data
+namespace Incapsulation.Data
 {
     public class InMemoryCustomerDataStorage
     {

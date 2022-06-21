@@ -1,5 +1,5 @@
-﻿using Incapsilation.Data;
-using Incapsilation.Data.Specifications;
+﻿using Incapsulation.Data;
+using Incapsulation.Data.Specifications;
 
 var storage = new InMemoryCustomerDataStorage();
 var newCastomer = storage.CreateCustomer(1, "Ivan", 37);

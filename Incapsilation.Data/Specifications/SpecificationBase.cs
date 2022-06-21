@@ -1,4 +1,4 @@
-﻿namespace Incapsilation.Data.Specifications
+﻿namespace Incapsulation.Data.Specifications
 {
     public abstract class SpecificationBase
     {

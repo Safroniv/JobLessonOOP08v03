@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Incapsilation.Data.Specifications
+namespace Incapsulation.Data.Specifications
 {
     //sealed - запечатанный
     //если попытаемся запечатать базовый(абстрактный) класс компилятор заругается,
