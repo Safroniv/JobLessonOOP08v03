@@ -6,7 +6,7 @@ namespace Incapsulation.Data
     {
         private Dictionary<int, Customer> _data = new Dictionary<int, Customer>();
 
-        //crud - reate read update delete
+        //crud - сreate read update delete
 
         /// <summary>
         /// Create customer
