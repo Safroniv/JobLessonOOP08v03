@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Incapsilation.Data\Incapsilation.Data.csproj" />
+    <ProjectReference Include="..\Incapsilation.Data\Incapsulation.Data.csproj" />
   </ItemGroup>
 
 </Project>

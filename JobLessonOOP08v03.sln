@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobLessonOOP08v03Part01", "JobLessonOOP08v03Part01\JobLessonOOP08v03Part01.csproj", "{6CEE841C-C32B-42E0-B0FD-353C63A53696}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Incapsilation.Data", "Incapsilation.Data\Incapsilation.Data.csproj", "{E869771E-CED1-4989-B4E6-63F105AB9A11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Incapsulation.Data", "Incapsilation.Data\Incapsulation.Data.csproj", "{E869771E-CED1-4989-B4E6-63F105AB9A11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
