@@ -14,7 +14,38 @@ foreach (var animal in animals)
     animal.Feed(catFood);
     animal.Feed(dogFood);
 }
+// Домашние приколы со статиками:
+public class A
+{
+    public static int StaticValA { get; set; }
+    public int ValA { get; set; }
 
+    // Статический конструктор не может принимать параметры
+    static A()
+    {
+        StaticValA = 10;
+    }
+    //публичный конструктор может принимать параметры
+    public A (int val)
+    {
+        ValA = val;
+    }
+}
+// неожиданна последовательность обхода
+public class B : A
+{
+    public static int StaticValB { get; set; }
+    public int ValB { get; set; }
+
+    static B()
+    {
+        StaticValB = 10;
+    }
+    public B(int valA, int valB):base(valA)
+    {        
+        ValB = valB;
+    }
+}
 public enum AnimalType
 {
     Cat,
