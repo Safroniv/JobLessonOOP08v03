@@ -1,4 +1,5 @@
 ﻿//Урок 4 - объекты, наследование, включает Incapsulation.Data
+//+ Урок 5 - переписывание DataStorage на генерики
 using Incapsulation.Data;
 using Incapsulation.Data.Specifications;
 
