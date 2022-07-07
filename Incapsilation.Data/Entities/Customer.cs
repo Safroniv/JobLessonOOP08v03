@@ -1,8 +1,7 @@
-﻿namespace Incapsulation.Data
+﻿namespace Incapsulation.Data.Entities
 {
-    public class Customer
+    public class Customer : BaseEntity
     {
-        public int Id { get; set; }
         public string? Name { get; set; }
         public int Age { get; set; }
     }

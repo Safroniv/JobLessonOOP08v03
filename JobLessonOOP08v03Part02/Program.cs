@@ -1,10 +1,10 @@
 ﻿//Урок 5 - полиморфизм
 var result = DoSome(2);
 var value = result;
+Console.WriteLine(value);
 
 
-
-static Result<int> DoSome(int i)
+static Result<int>? DoSome(int i)
 {
     if (i == 0)
     {
@@ -124,8 +124,8 @@ public abstract class Animal
     //Также реализацию можно наследовать, прописав в наследнике:
     //base.Feed(food);
 
-    public void Test() { }
-    public void Test(int i) { }
+    //public void Test() { }
+    //public void Test(int i) { }
     //стандартную арифметику невозможно переопределить на существующих классах
     //    public static int operator +(int a, int b)
     //    {
@@ -139,10 +139,10 @@ public abstract class Animal
     /// <param name="a">экземплял первого животного</param>
     /// <param name="b">экземплял второго животного</param>
     /// <returns>результат сложения</returns>
-    public static AnimalType operator +(Animal a, Animal b)
-    {
-        return AnimalType.SuperAnimal;
-    }
+    //public static AnimalType operator +(Animal a, Animal b)
+    //{
+    //    return AnimalType.SuperAnimal;
+    //}
 }
 
 public class AnimalFood
@@ -197,7 +197,7 @@ class Result<T>
 {
     // <T> - это генерик (тип обобщения)
     // генерик определяет расширяемый список
-    public T Value { get; set; }
+    public T? Value { get; set; }
     public bool IsSuccessful { get; set; }
     //implicit и explicit - не очень часто встречающиеся операторы
     public static implicit operator Result<T>(T value)
@@ -209,3 +209,5 @@ class Result<T>
         return result.Value;
     }
 }
+//Урок 5 - полиморфизм конец основной части 5ой лекции.
+//Далее возврат к 4ому занятию - DataStorage - переписывание на генерики.

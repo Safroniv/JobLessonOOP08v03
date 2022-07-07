@@ -1,10 +1,11 @@
-﻿using Incapsulation.Data.Specifications;
+﻿using Incapsulation.Data.Entities;
+using Incapsulation.Data.Specifications;
 
-namespace Incapsulation.Data
+namespace Incapsulation.Data.Storages
 {
-    public class InMemoryCustomerDataStorage
+    public class DataStorage<TEntity> where TEntity : BaseEntity
     {
-        private Dictionary<int, Customer> _data = new Dictionary<int, Customer>();
+        public Dictionary<int, TEntity> _data = new();
 
         //crud - сreate read update delete
 
@@ -14,16 +15,9 @@ namespace Incapsulation.Data
         /// <param name="id"></param>
         /// <param name="name"></param>
         /// <returns></returns>
-        public Customer CreateCustomer(int id, string name, int age)
+        public void AddEntity(TEntity entity)
         {
-            var customer = new Customer
-            {
-                Id = id,
-                Name = name,
-                Age = age
-            };
-            _data.Add(id, customer);
-            return customer;
+            _data.Add(entity.Id, entity);
         }
 
         /// <summary>
@@ -31,27 +25,27 @@ namespace Incapsulation.Data
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Customer? GetById(int id)
+        public TEntity? GetById(int id)
         {
-            var result = _data.TryGetValue(id, out var customer);
-            return result == false ? null : customer;
+            var result = _data.TryGetValue(id, out var entity);
+            return result == false ? null : entity;
         }
 
         //было
         //public Customer[] GetBySpecification (CustomerByAgeSpecification spec)
 
-        public Customer[] GetBySpecification(SpecificationBase spec)
+        public TEntity[] GetBySpecification(SpecificationBase<TEntity> spec)
         {
-            var allCustomers = _data.Values.ToArray();
-            var result = new List<Customer>();
+            var allEntitities = _data.Values.ToArray();
+            var result = new List<TEntity>();
             //когда применяется конструкция с массивом,
             //мы говорим что для каждого элемента данного массива
             //мы производим перебор элементов
-            foreach (var customer in allCustomers)
+            foreach (var entity in allEntitities)
             {
-                if (spec.Ensure(customer))
+                if (spec.Ensure(entity))
                 {
-                    result.Add(customer);
+                    result.Add(entity);
                 }
             }
             return result.ToArray();
@@ -61,11 +55,11 @@ namespace Incapsulation.Data
         /// Update customer
         /// </summary>
         /// <returns></returns>
-        public bool UpdateCustomer(int id, Customer updateCustomer)
+        public bool UpdateCustomer(int id, TEntity updatedEntity)
         {
             if (_data.TryGetValue(id, out var _))
             {
-                _data[id] = updateCustomer;
+                _data[id] = updatedEntity;
                 return true;
             }
             return false;

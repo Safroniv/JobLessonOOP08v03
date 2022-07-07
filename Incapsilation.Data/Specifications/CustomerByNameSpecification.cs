@@ -1,6 +1,8 @@
-﻿namespace Incapsulation.Data.Specifications
+﻿using Incapsulation.Data.Entities;
+
+namespace Incapsulation.Data.Specifications
 {
-    public class CustomerByNameSpecification : SpecificationBase
+    public class CustomerByNameSpecification : SpecificationBase<Customer>
     {
         private string _name;
 

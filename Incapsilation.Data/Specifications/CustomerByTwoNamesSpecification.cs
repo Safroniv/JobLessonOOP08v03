@@ -1,4 +1,6 @@
-﻿namespace Incapsulation.Data.Specifications
+﻿using Incapsulation.Data.Entities;
+
+namespace Incapsulation.Data.Specifications
 {
     //Если отнаследоваться от наследованного метода 
     //можно ли сделать перегрузку перегруженного метода - да можно но нестоит!

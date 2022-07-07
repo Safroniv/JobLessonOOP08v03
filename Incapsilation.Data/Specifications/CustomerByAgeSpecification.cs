@@ -1,13 +1,15 @@
-﻿namespace Incapsulation.Data.Specifications
+﻿using Incapsulation.Data.Entities;
+
+namespace Incapsulation.Data.Specifications
 {
-    public class CustomerByAgeSpecification : SpecificationBase
+    public class CustomerByAgeSpecification : SpecificationBase<Customer>
     {
         private int _age;
 
         public CustomerByAgeSpecification(int specAge)
         {
             _age = specAge;
-            _test = 115;
+            //_test = 115;
         }
         //override это реализация абстрактного метода в наследуемом классе
         //если добавить sealed - то мы запечатаем метод от наследования в дальнейшем
@@ -17,9 +19,9 @@
             return customer.Age == _age;
         }
 
-        public override void Test()
-        {
-            throw new NotImplementedException();
-        }
+        //public override void Test()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
