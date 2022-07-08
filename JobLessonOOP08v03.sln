@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Incapsulation.Data", "Incap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobLessonOOP08v03Part02", "JobLessonOOP08v03Part02\JobLessonOOP08v03Part02.csproj", "{BC1D3D86-A00D-49D6-B77F-CC8BF267709F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobLessonOOP08v03Part03", "JobLessonOOP08v03Part03\JobLessonOOP08v03Part03.csproj", "{A52504A4-AB2B-407E-8B9B-38A244D67EE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobLessonOOP08v03Part03", "JobLessonOOP08v03Part03\JobLessonOOP08v03Part03.csproj", "{A52504A4-AB2B-407E-8B9B-38A244D67EE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobLessonOOP08v03Part04", "JobLessonOOP08v03Part04\JobLessonOOP08v03Part04.csproj", "{C6E8B6DF-5B89-4114-8B92-822EC2819F30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A52504A4-AB2B-407E-8B9B-38A244D67EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A52504A4-AB2B-407E-8B9B-38A244D67EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A52504A4-AB2B-407E-8B9B-38A244D67EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E8B6DF-5B89-4114-8B92-822EC2819F30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E8B6DF-5B89-4114-8B92-822EC2819F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E8B6DF-5B89-4114-8B92-822EC2819F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E8B6DF-5B89-4114-8B92-822EC2819F30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
