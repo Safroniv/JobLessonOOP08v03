@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Incapsilation.Data\Incapsulation.Data.csproj" />
-  </ItemGroup>
-
 </Project>
