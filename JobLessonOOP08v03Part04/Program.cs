@@ -13,7 +13,7 @@
 #endregion
 
 #region реализация абстрактного класса
-IBar6_2 test1  = new Test6_2();
+IBar6_2 test1 = new Test6_2();
 
 test1.Test();
 
@@ -23,7 +23,7 @@ test2.Test();
 #endregion
 class Foo6_1
 {
-    public virtual void Test() 
+    public virtual void Test()
     {
         Console.WriteLine("test base");
     }
@@ -37,7 +37,7 @@ class Bar6_1 : Foo6_1
 {
     public override void Test()
     {
-        
+
         Console.WriteLine("test");
     }
     public new void NewTest()
@@ -143,4 +143,4 @@ public class Test6_2 : Bar6_2, IFoo6_2, IBar6_2
 //и врамках одной задачи.
 //в программе не должно быть гигантских которые покрывать всю программу
 //по интерфейсу должно быть понятно ЧТО именно будет делать класс
- 
+
